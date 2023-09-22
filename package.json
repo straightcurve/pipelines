@@ -1,0 +1,28 @@
+{
+    "name": "@sweetacid/pipelines",
+    "version": "1.0.0",
+    "description": "pipelines + behavior trees for task management",
+    "main": "dist/sweetacid-pipelines.cjs.js",
+    "module": "dist/sweetacid-pipelines.esm.js",
+    "scripts": {
+        "postinstall": "preconstruct dev",
+        "preconstruct": "preconstruct",
+        "build": "preconstruct build",
+        "release": "npm run build && npm publish --access=public"
+    },
+    "author": "A2 <antoniu.ilea@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@preconstruct/cli": "^2.8.1",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "@babel/preset-env": "^7.22.20",
+        "@babel/preset-typescript": "^7.22.15",
+        "@sweetacid/saw": "^1.0.1"
+    },
+    "repository": {
+        "url": "https://github.com/straightcurve/pipelines"
+    },
+    "types": "dist/sweetacid-pipelines.cjs.d.ts"
+}
