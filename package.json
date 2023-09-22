@@ -18,7 +18,7 @@
         "typescript": "^5.2.2"
     },
     "dependencies": {
-        "@sweetacid/saw": "^1.0.1"
+        "@sweetacid/saw": "^1.0.2"
     },
     "repository": {
         "url": "https://github.com/straightcurve/pipelines"
