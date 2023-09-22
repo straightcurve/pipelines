@@ -5,7 +5,6 @@
     "main": "dist/sweetacid-pipelines.cjs.js",
     "module": "dist/sweetacid-pipelines.esm.js",
     "scripts": {
-        "postinstall": "preconstruct build",
         "preconstruct": "preconstruct",
         "build": "preconstruct build",
         "release": "npm run build && npm publish --access=public"
@@ -13,12 +12,12 @@
     "author": "A2 <antoniu.ilea@gmail.com>",
     "license": "MIT",
     "devDependencies": {
-        "typescript": "^5.2.2"
-    },
-    "dependencies": {
         "@babel/preset-env": "^7.22.20",
         "@babel/preset-typescript": "^7.22.15",
         "@preconstruct/cli": "^2.8.1",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
         "@sweetacid/saw": "^1.0.1"
     },
     "repository": {
