@@ -1,6 +1,6 @@
 {
     "name": "@sweetacid/pipelines",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "pipelines + behavior trees for task management",
     "main": "dist/sweetacid-pipelines.cjs.js",
     "module": "dist/sweetacid-pipelines.esm.js",
