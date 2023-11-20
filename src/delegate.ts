@@ -5,7 +5,7 @@ import run from "./run";
 /**
  * @description execute a task with a modified input
  */
-const delegate = <TI, TO>(
+export const delegate = <TI, TO>(
     task: TaskLike,
     transformationFn: (input: TI) => TO,
     postFn?: (input: TI, transformedInput: TO) => Promise<void> | void

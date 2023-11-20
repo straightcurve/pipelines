@@ -2,7 +2,7 @@ import Task, { TaskLike } from "../task";
 import waitImmediate from "../wait";
 import run from "../run";
 
-class IgnoreErrors extends Task {
+export class IgnoreErrors extends Task {
     constructor(public tasks: TaskLike | TaskLike[]) {
         super(async (input) => {
             if (!Array.isArray(tasks)) {

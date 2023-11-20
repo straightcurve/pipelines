@@ -1,7 +1,7 @@
 export type Fn = (input: any) => void | Promise<void>;
 export type TaskLike = Task | Fn;
 
-class Task {
+export class Task {
     constructor(public fn: Fn) {}
 }
 

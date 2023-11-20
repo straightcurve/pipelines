@@ -1,5 +1,5 @@
 import { TaskLike } from "./task.js";
-declare class Pipeline {
+export declare class Pipeline {
     pipeline: TaskLike[];
     constructor(pipeline?: TaskLike[]);
     pipe(...tasks: TaskLike[]): void;

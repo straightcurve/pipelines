@@ -3,7 +3,7 @@ import Task, { TaskLike } from "../task";
 import waitImmediate from "../wait";
 import run from "../run";
 
-class SkipAborted extends Task {
+export class SkipAborted extends Task {
     constructor(public task: TaskLike) {
         super(async (input) => {
             const [error] = await run(task, input);

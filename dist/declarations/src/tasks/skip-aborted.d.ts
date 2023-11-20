@@ -1,5 +1,5 @@
 import Task, { TaskLike } from "../task.js";
-declare class SkipAborted extends Task {
+export declare class SkipAborted extends Task {
     task: TaskLike;
     constructor(task: TaskLike);
 }

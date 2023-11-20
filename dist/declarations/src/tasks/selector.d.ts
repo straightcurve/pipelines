@@ -11,7 +11,7 @@ export declare class AbortTaskError extends Error {
  * If a Selector's child succeeds, the Selector succeeds.
  * If all the Selector's children fail, the Selector throws an AbortTask error.
  */
-declare class Selector extends Task {
+export declare class Selector extends Task {
     tasks: TaskLike[];
     constructor(tasks: TaskLike[]);
 }

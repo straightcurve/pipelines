@@ -2,7 +2,7 @@ import Task, { TaskLike } from "../task";
 import waitImmediate from "../wait";
 import run from "../run";
 
-class Sequence extends Task {
+export class Sequence extends Task {
     constructor(public tasks: TaskLike[]) {
         super(async (input) => {
             for (const task of tasks) {

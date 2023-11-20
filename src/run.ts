@@ -2,7 +2,7 @@ import saw from "@sweetacid/saw";
 import Pipeline from "./pipeline";
 import Task, { TaskLike } from "./task";
 
-const run = async (task: TaskLike, input: any) => {
+export const run = async (task: TaskLike, input: any) => {
     return saw(async () => {
         if (task instanceof Pipeline) {
             await task.exec(input);

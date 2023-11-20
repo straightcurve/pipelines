@@ -14,7 +14,7 @@ export class AbortTaskError extends Error {}
  * If a Selector's child succeeds, the Selector succeeds.
  * If all the Selector's children fail, the Selector throws an AbortTask error.
  */
-class Selector extends Task {
+export class Selector extends Task {
     constructor(public tasks: TaskLike[]) {
         super(async (input) => {
             let allFailed = true;

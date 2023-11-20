@@ -2,7 +2,7 @@ import { TaskLike } from "./task";
 import waitImmediate from "./wait";
 import run from "./run";
 
-class Pipeline {
+export class Pipeline {
     constructor(public pipeline: TaskLike[] = []) {}
 
     public pipe(...tasks: TaskLike[]) {
